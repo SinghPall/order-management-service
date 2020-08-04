@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS ORDERITEM;
+
+CREATE TABLE Order(
+	productCode LONG AUTO_INCREMENT PRIMARY KEY,
+	name VARCHR(250) NOT NULL,
+	quantity LONG(300) NOT NULL
+);
+
+INSERT INTO Order(name, date, address, total, items) VALUES
+('Books', '3'), ('Bag', '7'), ('Pen', '5'), ('Paper', '12');
